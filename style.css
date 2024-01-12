@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'teletext';
+    src: url('teletext.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'calc';
+    src: url('calculatrix.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nn2';
+    src: url('nn2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'rixel';
+    src: url('rixel.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'chin';
+    src: url('chin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'crystal';
+    src: url('crystal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'd3d';
+    src: url('d3d.ttf') format('truetype');
+}
+
+body {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.calc {
+    font-family: 'calc', sans-serif;
+}
+
+.teletext {
+    font-family: 'teletext', sans-serif;
+}
+
+.nn2 {
+    font-family: 'nn2', sans-serif;
+}
+
+.rixel {
+    font-family: 'rixel', sans-serif;
+}
+
+.chin {
+    font-family: 'chin', sans-serif;
+}
+
+.d3d {
+    font-family: 'd3d', sans-serif;
+}
+
+.crystal {
+    font-family: 'crystal', sans-serif;
+}
+
+.clock {
+    font-size: 120px;
+    color: #333333;
+    margin-top: 200px;
+}

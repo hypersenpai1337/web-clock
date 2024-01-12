@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Часы в виде текста</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        function changeClass() {
+        var select = document.getElementById("classSelect");
+        var selectedClass = select.options[select.selectedIndex].value;
+        
+        var span = document.getElementById("typeface");
+        span.className = selectedClass;
+        }
+    </script>
+
+    <span id="typeface" class="calc"> <div class="clock" id="clock"></div> </span>
+
+    <select id="classSelect" onchange="changeClass()">
+        <option value="calc">Calc</option>
+        <option value="teletext">Teletext</option>
+        <option value="nn2">NN2</option>
+        <option value="rixel">Rixel</option>
+        <option value="chin">Chin</option>
+        <option value="d3d">d3d</option>
+        <option value="crystal">crystal</option>
+      </select>
+    <br>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = ("0" + now.getHours()).slice(-2);
+            var minutes = ("0" + now.getMinutes()).slice(-2);
+            var seconds = ("0" + now.getSeconds()).slice(-2);
+
+            var clock = document.getElementById('clock');
+            clock.textContent = hours + ':' + minutes + ':' + seconds;
+        }
+
+        setInterval(updateClock, 1000); 
+    </script>
+
+</body>
+</html>
